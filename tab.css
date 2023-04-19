@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Roboto:wght@300;500;700&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: grid;
+    align-content: start;
+    padding: 2rem 4rem;
+    /* font-family: 'Crimson Text', serif; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Tangerine', cursive; */
+}
+.cols {
+
+    text-align: justify;
+    /* justify-content: space-evenly; */
+}
+h1 {
+    font-size: clamp(2rem, 4rem, 6rem );
+}
+p {
+    line-height: 1.5rem;
+}
+.smallHidden {
+    display: none;
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #333333;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.controll {
+    background-color: #403e3e;
+    padding-inline: 1.5rem;
+    /* padding-top: 1rem; */
+    display: grid;
+    align-content:space-evenly;
+    
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 6px;
+    height: 15px;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+/*style tabs*/
+.tab {
+    border: none;
+    background-color: #f1f1f1;
+}
+.buttons {
+    display: grid;
+    gap: 0.5rem;
+
+}
+/*styling the tab buttons*/
+.tab button {
+
+}
+.tablinks{
+    background-color: hsl(0,0%,40%);
+    color: hsl(0,0%,70%);
+    border: none;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+.tablinks:active {
+    /* background-color: hsl(0,0%,70%); */
+    background-color: red;
+    color: hsl(0,0%,40%);
+}
+/*button on hover*/
+.tablinks:hover {
+    background-color: hsl(0,0%,70%);
+    color: hsl(0,0%,40%);
+}
+/*tab content style*/
+.tabcontent {
+   display: none;
+   color: hsl(0,0%,70%);
+}
+.active {
+    display:block;
+}
+
+@media screen and (min-width: 700px){
+    body {
+        height: 100vh;
+    }
+    main {
+        height: 100%;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+    .smallHidden {
+        display: block;
+    }
+    .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        text-align: justify;
+        /* justify-content: space-evenly; */
+    }
+    .controll {
+        height: 100%;
+    }
+    
+}

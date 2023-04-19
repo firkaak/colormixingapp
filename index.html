@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="tab.css">
+</head>
+
+<body>
+    <main>
+        <header id="text">
+            <h1>Text</h1>
+            <section class="cols">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti placeat quidem repudiandae, dicta
+                    hic
+                    porro alias dolore eligendi? Libero exercitationem dicta ipsum, accusantium fugit alias enim nostrum
+                    natus numquam, quas pariatur molestias aut tenetur labore cupiditate tempore corporis in voluptas
+                    officiis sequi, consectetur sunt sint! Ea veniam illo tenetur expedita?</p>
+
+                <p class="smallHidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eligendi
+                    expedita molestias odit
+                    aperiam reprehenderit quibusdam iusto laborum eius et, ad architecto quos omnis a repudiandae natus
+                    sit
+                    eaque? Et.</p>
+                <h2 class="smallHidden">Lorem ipsum dolor sit.</h2>
+                <p class="smallHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo ullam reiciendis officia
+                    assumenda animi minima possimus impedit nam sunt, dolorum saepe nostrum nihil quisquam porro sequi
+                    nemo sint quam sed aspernatur maiores magnam facere pariatur molestias. Numquam placeat est beatae
+                    incidunt! Dicta cumque, adipisci id beatae quo fugiat tempora nostrum consequatur maxime blanditiis
+                    incidunt reiciendis deleniti, delectus, quisquam ipsa? Repellendus sequi rerum fuga quaerat enim
+                    doloremque aliquam ipsam minima provident! Aliquid, labore. Rem ullam optio ex quidem! Consectetur
+                    consequuntur impedit debitis est, ratione voluptates in vel id amet nulla quibusdam reprehenderit,
+                    magni cumque nostrum beatae nihil iure aut quisquam? Maxime adipisci dolores voluptates excepturi
+                    nemo, harum, sed mollitia alias, ipsam beatae praesentium! Culpa incidunt quo labore, quibusdam
+                    repellendus nemo temporibus a veritatis sed nam illum atque, quas totam accusantium expedita cumque
+                    minima vitae! Possimus ducimus esse dicta quasi, minus architecto fugiat debitis veniam repudiandae!
+                    Recusandae sed voluptatem nam reiciendis.</p>
+            </section>
+
+        </header>
+
+        <section class="controll">
+            <!--tab content-->
+            <div id="bgColor" class="tabcontent active">
+                <label for="red">red</label><span id="redV">255</span><br>
+                <input type="range" min="0" max="255" value="255" step="1" id="red" class="slider"><br>
+                <label for="green">green</label><span id="greenV">255</span><br>
+                <input type="range" min="0" max="255" value="255" step="1" id="green" class="slider"><br>
+                <label for="blue">blue</label><span id="blueV">255</span><br>
+                <input type="range" min="0" max="255" value="255" step="1" id="blue" class="slider"><br>
+                <label for="alpha">alpha</label><span id="alphaV">1</span><br>
+                <input type="range" min="0" max="1" value="1" step="0.01" id="alpha" class="slider"><br>
+                <span class="w3-button w3-bar-item w3-orange" id="resetBG">reset background</span>
+            </div>
+
+
+            <div id="txtColor" class="tabcontent">
+                <label for="red">red</label><span id="redTv">0</span><br>
+                <input type="range" min="0" max="255" value="0" step="1" id="redT" class="slider"><br>
+                <label for="green">green</label><span id="greenTv">0</span><br>
+                <input type="range" min="0" max="255" value="0" step="1" id="greenT" class="slider"><br>
+                <label for="blue">blue</label><span id="blueTv">0</span><br>
+                <input type="range" min="0" max="255" value="0" step="1" id="blueT" class="slider"><br>
+                <label for="alpha">alpha</label><span id="alphaTv">1</span><br>
+                <input type="range" min="0" max="1" value="1" step="0.01" id="alphaT" class="slider"><br>
+                <span class="w3-button w3-bar-item w3-orange" id="resetBG">reset text</span>
+            </div>
+            <!--tablinks-->
+
+            <div class="buttons">
+                <button class="tablinks" onclick="openAdj(event, 'bgColor')">background</button>
+                <button class="tablinks" onclick="openAdj(event, 'txtColor')">text</button>
+            </div>
+
+        </section>
+
+
+    </main>
+    <script src="tabs.js"></script>
+</body>
+
+</html>
