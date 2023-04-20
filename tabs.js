@@ -98,11 +98,11 @@ for (i = 0; i < accordion.length; i++) {
         this.classList.toggle("openpanel");
         // toggle between hiding/showing the panel
         let panel = this.nextElementSibling;
-        if (panel.style.display === "grid") {
+        if (panel.style.display === "block") {
             panel.style.display = "none";
         }
         else {
-            panel.style.display ="grid";
+            panel.style.display ="block";
         }
 
     });
