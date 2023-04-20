@@ -15,6 +15,7 @@ for (i = 0; i < tablinks.length; i++) {
 //showing current tab and add active class
 document.getElementById(adjustment).style.display = "block";
 evt.currentTarget.className += " active"; 
+
 }
 
 //color adjustment:
@@ -59,18 +60,26 @@ document.getElementById('greenT').addEventListener('input',changeTextColor);
 document.getElementById('blueT').addEventListener('input',changeTextColor);
 document.getElementById('alphaT').addEventListener('input',changeTextColor);
 
-/* function reset(){
+function resetBg(){
    red.value = 255;
    green.value = 255;
    blue.value = 255;
    alpha.value = 1;
+   
+   changeBgcolor();
+    
+}
+
+document.getElementById('resetBG').addEventListener('click',resetBg);
+
+function resetTxt(){
    redT.value = 0;
    greenT.value = 0;
    blueT.value = 0;
    alphaT.value = 1;
-   changeBgcolor();
+
    changeTextColor();
     
 }
 
-document.getElementById('resetMain').addEventListener('click',reset); */
+document.getElementById('resetTxt').addEventListener('click',resetTxt);
