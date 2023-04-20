@@ -52,13 +52,16 @@ function changeTextColor(){
     document.getElementById('greenTv').innerHTML = `${greenT}`;
     document.getElementById('blueTv').innerHTML = `${blueT}`;
     document.getElementById('alphaTv').innerHTML = `${alphaT}`;
-
+    
 }
 
+/* adding event */
 document.getElementById('redT').addEventListener('input',changeTextColor);
 document.getElementById('greenT').addEventListener('input',changeTextColor);
 document.getElementById('blueT').addEventListener('input',changeTextColor);
 document.getElementById('alphaT').addEventListener('input',changeTextColor);
+
+//resetting colors
 
 function resetBg(){
    red.value = 255;
@@ -83,3 +86,24 @@ function resetTxt(){
 }
 
 document.getElementById('resetTxt').addEventListener('click',resetTxt);
+
+
+// accordion
+let accordion = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function() {
+        // toggle between active class, to highlight the button
+        this.classList.toggle("openpanel");
+        // toggle between hiding/showing the panel
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "grid") {
+            panel.style.display = "none";
+        }
+        else {
+            panel.style.display ="grid";
+        }
+
+    });
+}
