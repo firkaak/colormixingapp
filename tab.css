@@ -187,6 +187,8 @@ label {
     gap: 0.5rem;
 }
 select {
+    -webkit-appearance: none;
+    appearance: none;
     cursor: pointer;
     background-image: linear-gradient(to top, hsl(0, 0%, 13%), hsl(0, 0%, 20%));
     color: hsl(270, 1%, 49%);
