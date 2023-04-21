@@ -160,14 +160,54 @@ label {
 }
 
 /* accordion */
-.openpanel {
-    background-color: hsl(0, 0%, 70%);
+.accordion {
+    cursor: pointer;
+    background-image: linear-gradient(to top, hsl(0, 0%, 13%), hsl(0, 0%, 20%));
+    color: hsl(270, 1%, 49%);
+    border: 1px solid hsl(0, 0%, 0%);
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 8px;
 }
+.accordion:hover {
+    background-image: linear-gradient(to top, hsl(0, 0%, 10%), hsl(0, 0%, 20%));
+    color: hsl(257, 45%, 37%);
+    box-shadow: inset 0px 1px 10px hsl(257, 45%, 30%);
+
+}
+
 
 .panel {
     display: none;
 
 }
+.fFamily {
+    width: 50%;
+    display:grid;
+    gap: 0.5rem;
+}
+select {
+    cursor: pointer;
+    background-image: linear-gradient(to top, hsl(0, 0%, 13%), hsl(0, 0%, 20%));
+    color: hsl(270, 1%, 49%);
+    border: 1px solid hsl(0, 0%, 0%);
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    
+}
+option {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(270, 1%, 49%);
+    border: none;
+}
+option:active,
+option:checked,
+option:visited {
+border: none;
+}
+
 
 @media screen and (min-width: 900px) {
     body {
