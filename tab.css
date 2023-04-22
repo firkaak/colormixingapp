@@ -22,7 +22,7 @@ header {
     align-content: start;
     padding: 2rem 3rem;
     /* font-family: 'Crimson Text', serif; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Tangerine', cursive; */
 }
 
@@ -169,6 +169,7 @@ label {
     padding: 0.5em 1em;
     border-radius: 8px;
 }
+
 .accordion:hover {
     background-image: linear-gradient(to top, hsl(0, 0%, 10%), hsl(0, 0%, 20%));
     color: hsl(257, 45%, 37%);
@@ -181,11 +182,13 @@ label {
     display: none;
 
 }
+
 .fFamily {
     width: 50%;
-    display:grid;
+    display: grid;
     gap: 0.5rem;
 }
+
 select {
     -webkit-appearance: none;
     appearance: none;
@@ -196,18 +199,31 @@ select {
     font-size: 1rem;
     padding: 0.5em 1em;
     border-radius: 8px;
-    
+
 }
+
+.select:hover,
+.select:active,
+.select:visited {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 option {
+    -webkit-appearance: none;
+    appearance: none;
     cursor: pointer;
     background-color: hsl(0, 0%, 20%);
     color: hsl(270, 1%, 49%);
     border: none;
 }
+
 option:active,
 option:checked,
 option:visited {
-border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
 }
 
 

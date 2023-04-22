@@ -13,23 +13,23 @@
 <body>
     <main>
         <header id="text">
-            <h1>Some Title</h1>
-            <section class="cols">
+            <h1 id="h1">Some Title</h1>
+            <section class="cols p">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti placeat quidem repudiandae, dicta
                     hic
                     porro alias dolore eligendi? Libero exercitationem dicta ipsum, accusantium fugit alias enim nostrum
                     natus numquam, quas pariatur molestias aut tenetur labore cupiditate tempore corporis in voluptas
                     officiis sequi, consectetur sunt sint! Ea veniam illo tenetur expedita?</p>
 
-                <p class="smallHidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eligendi
+                <p class="smallHidden p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eligendi
                     expedita molestias odit
                     aperiam reprehenderit quibusdam iusto laborum eius et, ad architecto quos omnis a repudiandae natus
                     sit
                     eaque? Et.</p>
             </section>
             <section class="colLarge">
-                <h2 class="smallHidden">Lorem ipsum dolor sit.</h2>
-                <p class="smallHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo ullam
+                <h2 class="smallHidden" id="h2">Lorem ipsum dolor sit.</h2>
+                <p class="smallHidden p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo ullam
                     reiciendis officia
                     assumenda animi minima possimus impedit nam sunt, dolorum saepe nostrum nihil quisquam porro sequi
                     nemo sint quam sed aspernatur maiores magnam facere pariatur molestias. Numquam placeat est beatae
@@ -80,24 +80,24 @@
             </div>
             <button class="accordion">fonts</button>
             <div class="panel">
-                <div class="fFamily">
-                    <label for="h1font">h1:</label>
-                    <select name="h1font" id="h1font">
-                        <option value="serif">serif</option>
-                        <option value="sanserif">sanserif</option>
-                        <option value="cursive">cursive</option>
+                <div class="fFamily" id="fFamily">
+                    <label for="h1">h1:</label>
+                    <select name="h1" id="mainTitle">
+                        <option value="0">sans-serif</option>
+                        <option value="1">serif</option>
+                        <option value="2">cursive</option>
                     </select>
-                    <label for="h2font">h2:</label>
-                    <select name="h2font" id="h2font">
-                        <option value="serif">serif</option>
-                        <option value="sanserif">sanserif</option>
-                        <option value="cursive">cursive</option>
+                    <label for="h2">h2:</label>
+                    <select name="h2" id="secondTitle">
+                        <option value="0">sans-serif</option>
+                        <option value="1">serif</option>
+                        <option value="2">cursive</option>
                     </select>
-                    <label for="pfont">p:</label>
-                    <select name="pfont" id="pfont">
-                        <option value="serif">serif</option>
-                        <option value="sanserif">sanserif</option>
-                        <option value="cursive">cursive</option>
+                    <label for="p">p:</label>
+                    <select name="p" id="paragraph" >
+                        <option value="0">sans-serif</option>
+                        <option value="1">serif</option>
+                        <option value="2">cursive</option>
                     </select>
                 </div>
                 <div class="fSize">
