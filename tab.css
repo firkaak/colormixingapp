@@ -15,12 +15,14 @@ main {
     align-content: start;
     gap: 1rem;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 header {
     display: grid;
     align-content: start;
     padding: 2rem 3rem;
+    overflow: hidden;
     /* font-family: 'Crimson Text', serif; */
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Tangerine', cursive; */
@@ -33,17 +35,21 @@ header {
 }
 
 h1 {
-    font-size: clamp(1rem, 2.5rem, 6rem);
+    font-size: 2rem;
+}
+h2 {
+    font-size: 2rem;
 }
 
 p {
-    line-height: 1.2rem;
+    font-size: 1rem;
+    /* line-height: 1.2rem; */
 }
 
 .smallHidden {
     display: none;
 }
-
+/* control panel */
 .controll {
     background-image: linear-gradient(to top, hsl(0, 0%, 15%), hsl(0, 0%, 20%));
     padding-inline: 1.5rem;
@@ -61,7 +67,7 @@ p {
     width: 100%;
     height: 2px;
     border-radius: 5px;
-    background-color: #333333;
+    background-color: #555555;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -88,6 +94,27 @@ p {
     box-shadow:
         /* 0px 1px 10px hsl(257, 45%, 30%), */
         inset 0px 1px 10px hsl(257, 42%, 30%);
+}
+#red:hover {
+    box-shadow:
+    /* 0px 1px 10px hsl(257, 45%, 30%), */
+    inset 0px 1px 10px hsl(0, 42%, 41%);
+    color: hsl(0, 42%, 41%);
+    
+}
+#green:hover {
+    box-shadow:
+    /* 0px 1px 10px hsl(257, 45%, 30%), */
+    inset 0px 1px 10px hsl(156, 42%, 41%);
+    color: hsl(156, 42%, 41%);
+    
+}
+#blue:hover {
+    box-shadow:
+    /* 0px 1px 10px hsl(257, 45%, 30%), */
+    inset 0px 1px 10px hsl(233, 42%, 41%);
+    color: hsl(233, 42%, 41%);
+    
 }
 
 /*style tabs*/
@@ -183,10 +210,15 @@ label {
 
 }
 
+
 .fFamily {
+    float: left;
     width: 50%;
     display: grid;
     gap: 0.5rem;
+}
+.fsize {
+    float: right;
 }
 
 select {

@@ -109,24 +109,6 @@ for (i = 0; i < accordion.length; i++) {
 }
 
 // font-family styling
-/* const fFamily = ["Roboto", "Crimson Text", "Tangerine"];
-function chfontFamily (){
-    let selects = document.getElementsByTagName("select");
-    for (j = 0; j < selects.length; j++) {
-        console.log(selects[j].name);
-        console.log(selects[j].selectedIndex);
-        let x = selects[j].selectedIndex;
-        console.log(fFamily[x]);
-        document.getElementById("h1").style.fontFamily = `${fFamily[x]}`;
-        document.getElementById("h2").style.fontFamily = `${fFamily[x]}`;
-        document.getElementById("paragraph").style.fontFamily = `${fFamily[x]}`;
-
-    }
-
-} */
-
-
-
 
 const fFamily = ["Roboto", "Crimson Text", "Tangerine"];
 let select = document.getElementsByTagName("select");
