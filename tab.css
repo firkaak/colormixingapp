@@ -177,7 +177,7 @@ input {
 
 .tabcontent span {
     float: right;
-    color: hsl(270, 1%, 49%)
+    color: hsl(270, 1%, 49%);
 }
 
 label {
@@ -209,15 +209,20 @@ label {
 
 }
 
-
+/* font adjustment */
 .fFamily {
     float: left;
-    width: 50%;
+    width: 40%;
     display: grid;
     gap: 0.5rem;
 }
 .fsize {
     float: right;
+    width:50%;
+}
+.fsize span {
+    float: right;
+    color: hsl(270, 1%, 49%);
 }
 
 select {
